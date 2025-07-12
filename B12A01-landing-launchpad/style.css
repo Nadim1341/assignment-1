@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f8fc;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  background: #f5f5ff;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b4bff;
+}
+
+.nav-button,
+.primary-btn {
+  background: #4b4bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover,
+.primary-btn:hover {
+  background: #3737cc;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: url('Assets/Hero-bg.png') no-repeat center center;
+  background-size: cover;
+  color: #111;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.video-section .container.video-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-with-icon img {
+  width: 60px;
+  height: auto;
+}
+
+.stats {
+  text-align: center;
+  padding: 40px 10%;
+  background: #eef0ff;
+}
+
+.stats-heading {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stat h2 {
+  font-size: 36px;
+  color: #4b4bff;
+}
+
+.testimonial-heading {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 10%;
+  flex-wrap: wrap;
+}
+
+.testimonial-box {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.testimonial-box p {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.feature-section-focus {
+  text-align: center;
+  padding: 60px 10%;
+  background: #f7f8fc;
+  border-radius: 15px;
+  margin: 40px 5%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-section-focus h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-section-focus .tagline {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.feature-section-focus .primary-btn {
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+}
+
+.feature-section-focus .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #4b4bff, #6a5acd);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feature-section-focus .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Contact Section Specific Styles */
+.contact {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contact-heading {
+  flex: 1;
+  font-size: 3.5em;
+  line-height: 1.1;
+  max-width: 380px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.contact form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  background: #fff;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.contact label {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f9f9fc;
+  color: #333;
+  resize: vertical;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #999;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #4b4bff;
+  box-shadow: 0 0 0 3px rgba(75, 75, 255, 0.2);
+}
+
+.contact textarea {
+  min-height: 120px;
+}
+
+.contact .primary-btn {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  margin-top: 10px;
+  background-color: #4b4bff;
+  border-radius: 8px;
+}
+
+.contact .primary-btn:hover {
+  background-color: #3737cc;
+}
+
+/* Footer Specific Styles */
+.main-footer {
+  background: #f7f8fc; /* Match the background of the provided image */
+  padding: 80px 10%; /* Ample padding for spacing */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 700px; /* Limit content width for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* Space between elements in the footer */
+}
+
+.footer-logo {
+  font-size: 3.5em; /* Larger font size for the logo */
+  font-weight: bold;
+  color: #4b4bff; /* Matching the blue color from other logos */
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+.footer-description {
+  font-size: 1.1em; /* Slightly larger text for description */
+  color: #666; /* Muted color for the description */
+  line-height: 1.6;
+  max-width: 500px; /* Limit width of description for readability */
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px; /* Space between navigation links */
+  flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  justify-content: center;
+  margin-top: 20px; /* Space above navigation links */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #555; /* Color for the navigation links */
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #4b4bff; /* Highlight color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-section-focus h3 {
+    font-size: 1.8em;
+  }
+
+  .feature-section-focus .image-wrapper {
+    max-width: 90%;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .contact-heading {
+    max-width: 100%;
+    font-size: 2.8em;
+  }
+
+  .contact form {
+    max-width: 90%;
+  }
+
+  .main-footer {
+    padding: 60px 5%; /* Adjust footer padding for smaller screens */
+  }
+
+  .footer-logo {
+    font-size: 3em;
+  }
+
+  .footer-description {
+    font-size: 1em;
+  }
+
+  .footer-nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 5%;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .nav-button,
+  .primary-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .feature-section-focus h3 {
+    font-size: 1.5em;
+  }
+
+  .feature-section-focus .tagline {
+    font-size: 0.9em;
+  }
+
+  .contact-heading {
+    font-size: 2.2em;
+  }
+
+  .footer-logo {
+    font-size: 2.5em;
+  }
+
+  .footer-description {
+    font-size: 0.9em;
+  }
+
+  .footer-nav {
+    flex-direction: column; /* Stack links vertically on very small screens */
+    gap: 10px;
+  }
+}
